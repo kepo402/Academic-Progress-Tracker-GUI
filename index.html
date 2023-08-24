@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Progress Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Academic Progress Tracker</h1>
+    </header>
+    <main>
+        <!-- Your form will go here -->
+        <form id="course-form">
+            <h2>Enter Course Information</h2>
+            <label for="course-name">Course Name:</label>
+            <input type="text" id="course-name" required>
+            
+            <label for="credits">Credits:</label>
+            <input type="number" id="credits" required>
+            
+            <label for="grade">Grade:</label>
+            <select id="grade" required>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+
+                <!-- Add more grade options -->
+            </select>
+        
+            <button type="submit">Add Course</button>
+        </form>
+
+
+        <!-- Display the list of courses -->
+        <div id="course-list">
+           <h2>Your Courses</h2>
+
+           <ul id="courses"></ul>
+        </div>
+
+        
+        
+        
+        
+    <div id="gpa-output">
+        <h2>Cumulative GPA</h2>
+        <p id="cumulative-gpa">GPA: N/A</p>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Academic Progress Tracker</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
